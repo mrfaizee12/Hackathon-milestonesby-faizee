@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Editable Resume Builder by Faizan Anjum</h1>
+        <form id="resumeForm">
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="name">Phone: </label>
+                <input type="text" id="phone" name="phone" required><br>
+
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="education">Education: </label>
+                <input type="text" id="education" name="education" required><br>
+
+                <label for="experience">Experience: </label>
+                <textarea id="experience" name="experience" rows="4" required></textarea><br>
+
+                <label for="skills">Skills: </label>
+                <input type="text" id="skills" name="skills" required><br>
+
+                <label for="profilePic">Choose a Profile Picture: </label>
+                <input type="file" id="profilePic" name="profilePic" accept="image/*"><br><br>
+
+                <button type="button" id="generateBtn">Generate Resume</button>
+            </fieldset>
+        </form>
+        <div id="resumeOutput" contenteditable="true"></div>
+    </div>
+
+    <script src="script.js" type="module"></script>
+</body>
+</html>
